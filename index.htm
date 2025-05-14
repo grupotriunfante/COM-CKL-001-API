@@ -153,14 +153,14 @@
       <script>
         const atividades = [
           ["08h00 - 08h10", "Realizar a Previa","-","WhatsApp/Celular","Acionar Gerente Comercial"],
-          ["08h00 - 08h50", "Fazer a planilha do amancio","COM-POP-002-API","SICF", "Acionar a Arco"],
-          ["11h00 - 12h00", "Realizar a reunião Planner","-","Teams", "Acionar Gerente Comercial"],
-          ["14h00 - 15h00", "Fazer o Raio-X","-","SICF", "Acionar os vendedores"],
+          ["11h00 - 12h00", "Realizar a verificação dos KM's","-","Planner", "Acionar Gerente Comercial"],
           ["15h00 - 15h30", "Realizar os acompanhamentos","-", "SICF", "Acionar Supervisores ou Vendedores"],
-          ["15h30 - 16h00","Fazer o MRV","-", "SICF","Acionar o Supervisor de Vendas"],
-          ["16h00 - 17h30","Fazer as campanhas","-", "SICF", "Acionar o Supervisor de Vendas"],
-          ["17h30 - 18h00", "Realizar o ajuste de roteiro","COM-POP-003-API", "Portal", "Acionar gerente comercial"],
-
+          ["17h30 - 18h00", "Ajustar os roteiros conforme os vendedores solicitam","-", "Portal", "Acionar Supervisores ou Vendedores"],
+          ["Segunda-feira às 09h00 - 10h30", "Realizar o relatório de fornecedores com as vendas do mês","-", "SICF", "Acionar Gerente Comercial"],
+          ["Terça e Quinta-feira às 08h30 - 10h00", "Ligar para a equipe","-", "WhatsApp", "Acionar Gerente Comercial"],
+          ["Segunda, Quarta e Sexta-feira às 14h00 - 15h00", "Realizar o acompanhamento do mês dos vendedores (Raio-X)","-", "SICF", "Acionar Gerente Comercial"],
+          ["Segunda, Quarta e Sexta-feira às 15h30 - 16h00", "Passar para todos os CLT's o acompanhamento de de remuneração (MRV)","-", "SICF", "Acionar Gerente Comercial"],
+          ["Segunda, Quarta e Sexta-feira às 16h00 - 17h30", "Realizar as campanhas das industrias do mês","-", "SICF", "Acionar Gerente Comercial"],
           
         ];
 
@@ -251,7 +251,7 @@
     formData.append("data", data);
     formData.append("unidade", unidade);
 
-    fetch("https://script.google.com/macros/s/AKfycbzGVXzw7BYG67wHdjHlSo8EvCt2SEKvBXgGs5fEErCiEyLVArKrUVYcOnpOSjvmlorJ/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbywY_k55vhZ53fQ9GLmJUILHXIVNDHKkVm7hEKzaDz_7hrCZICamNcwGzFLsjILIPIM/exec", {
       method: "POST",
       body: formData
     })
